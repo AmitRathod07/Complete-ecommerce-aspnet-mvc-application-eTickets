@@ -2,9 +2,9 @@
 {
     public class MovieCategory
     {
-        Action = 1,
-        Comedy, //=2
-        Drama, //=3
-        Documentry //=4
+        //Action = 1,
+        //Comedy, //=2
+        //Drama, //=3
+        //Documentry //=4
     }
 }
