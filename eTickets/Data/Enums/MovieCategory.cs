@@ -1,10 +1,17 @@
-﻿namespace eTickets.Data.Enums
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace eTickets.Data
 {
-    public class MovieCategory
+    public enum MovieCategory
     {
-        //Action = 1,
-        //Comedy, //=2
-        //Drama, //=3
-        //Documentry //=4
+        Action = 1,
+        Comedy, //=2
+        Drama, //=3
+        Documentry, //=4
+        Horror,
+        Cartoon
     }
 }
