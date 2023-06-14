@@ -11,13 +11,10 @@ namespace eTickets.Controllers
         {
             _context = context;
         }
-
-
-
         public IActionResult Index()
         {
-            var allactors = _context.Actors.ToList();
-            return View();
+            var data = _context.Actors.ToList();
+            return View(data);
         }
     }
 }

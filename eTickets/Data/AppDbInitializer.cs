@@ -1,14 +1,20 @@
 ﻿using eTickets.Models;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace eTickets.Data
 {
     public class AppDbInitializer
     {
-        public static void Seed(IApplicationBuilder app)
+        public static void Seed(IApplicationBuilder applicationBuilder)
         {
-            using (var ServiceScope = app.ApplicationServices.CreateScope())
+            using (var serviceScope = applicationBuilder.ApplicationServices.CreateScope())
             {
-                var context = ServiceScope.ServiceProvider.GetService<AppDbContext>();
+                var context = serviceScope.ServiceProvider.GetService<AppDbContext>();
 
                 context.Database.EnsureCreated();
 
@@ -26,7 +32,7 @@ namespace eTickets.Data
                         {
                             Name = "Cinema 2",
                             Logo = "http://dotnethow.net/images/cinemas/cinema-2.jpeg",
-                            Description = "This is the description of the first cinema"
+                            Description = "This is the description of the second cinema"
                         },
                         new Cinema()
                         {
@@ -309,6 +315,7 @@ namespace eTickets.Data
                     context.SaveChanges();
                 }
             }
+
         }
     }
 }
