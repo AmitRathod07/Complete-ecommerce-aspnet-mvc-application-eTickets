@@ -41,9 +41,9 @@ namespace eTickets.Data.Services
             throw new NotImplementedException();
         }
 
-        IEnumerable<Actor> IActorsService.GetAll()
-        {
-            throw new NotImplementedException();
-        }
+        //IEnumerable<Actor> IActorsService.GetAll()
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }
