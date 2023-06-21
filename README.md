@@ -11,7 +11,7 @@ This application is an eCommerce application used to buy movies online from diff
 
 📍Application demo link: https://bit.ly/2RHVcUo
 
-📍Source code: https://bit.ly/3jvocZK
+<!-- 📍Source code: https://bit.ly/3jvocZK. -->
 
 📍Full course: https://bit.ly/3CWvkqk
 
