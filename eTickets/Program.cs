@@ -1,4 +1,5 @@
 using eTickets.Data;
+using eTickets.Data.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
@@ -10,7 +11,10 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AppDbContext>(options => 
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionString")));
 
+//services Configuration
+builder.Services.AddScoped<IActorsService, ActorsService>();
 
+builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
@@ -26,7 +30,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+    
 app.UseAuthorization();
 
 app.MapControllerRoute(
