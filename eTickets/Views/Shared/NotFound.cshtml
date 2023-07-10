@@ -1,0 +1,109 @@
+﻿<style>
+    .row{
+        *
+
+    {
+        padding: 0;
+        margin: 0;
+        outline: 0;
+        color: #444;
+        box-sizing: border-box;
+        font-family: 'IBM Plex Sans', sans-serif;
+    }
+
+
+    h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    span {
+        display: block;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .container {
+        width: 80%;
+        max-width: 1600px;
+        margin: auto;
+    }
+
+    .grid-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        grid-gap: 50px;
+    }
+
+    .colmun-left {
+        text-align: left;
+    }
+
+    .colmun-right {
+        text-align: right;
+    }
+
+    .px-spc-b-20 {
+        padding-bottom: 20px;
+    }
+
+    button.go-home {
+        padding: 5px 20px;
+        background: #ffa000;
+        border: transparent;
+        border-radius: 2px;
+        box-shadow: 0 0 2px rgb(0 0 0 / 30%);
+        cursor: pointer;
+        margin: 20px 0;
+        color: #fff;
+    }
+
+        button.go-home i {
+            color: #fff;
+        }
+
+    img {
+        display: block;
+        width: 100%;
+    }
+    }
+</style>
+@*<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="grid-row">
+                <div class="colmun colmun-left">
+                    <img src="d:\users\amit\etickets\etickets\img\image-left.png" alt="image-left" />
+                    <h1 class="px-spc-b-20">We can't find the page you are looking for.</h1>
+                    <span class="px-spc-b-20">This page has been relocated or removed.</span>
+                    <a class="btn btn-outline-success" asp-controller="Movies" asp-action="Index">Home Page</a>
+                </div>
+                <div class="colmun colmun-right">
+                    <img src="d:\users\amit\etickets\etickets\img\right-shape.png" alt="right-shape" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>*@
+
+
+﻿<div class="row">
+    <div class="col-md-6 offset-3">
+        <div class="wrapper">
+            <div class="container">
+                <div class="grid-row">
+                    <div class="colmun colmun-left" alt="image-left">
+                        <img src="/../img/image-left.png" />
+                        <h1 class="px-spc-b-20">We can't find the page you are looking for.</h1>
+                        <span class="px-spc-b-20">This page has been relocated or removed.</span>
+                        <a class="btn btn-outline-success" asp-controller="Movies" asp-action="Index">Home Page</a>
+                    </div>
+                    <div class="colmun colmun-right">
+                        <img src="/../img/right-shape.png" alt="right-shape" />
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+</div>
